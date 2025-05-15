@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+   
+    <link rel="stylesheet" href="/css/style.css"> <!-- CSS personalizado opcional -->
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="card p-4 shadow">
+            <h2 class="mb-4">Seja Bem vindo a área de cadastro</h2>
+
+            <form action="formulario_teste" method="POST" id="formulario">
+                <fieldset>
+                    <legend class="regular"></legend>
+
+                    <div class="regular">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="regular">
+                        <label for="sobrenome" class="form-label">Sobrenome:</label>
+                        <input type="text" id="sobrenome" name="sobrenome" class="form-control" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="regular">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="regular">
+                        <label for="data_nascimento" class="form-label">Data de Nascimento:</label>
+                        <input type="date" id="data_nascimento" name="data_nascimento" class="form-control" required>
+                    </div>
+
+                    <div class="regular">
+                        <label for="senha" class="form-label">Senha:</label>
+                        <input type="password" id="senha" name="senha" class="form-control" placeholder="Crie uma senha" required minlength="6">
+                    </div>
+
+                    <div class="regular">
+                        <label for="curso" class="form-label">Curso:</label>
+                        <input type="text" id="curso" name="curso" class="form-control" placeholder="Digite seu curso" required>
+                    </div>
+
+                    <div class="regular">
+                        <label for="escolaridade" class="form-label">Escolaridade:</label>
+                        <input type="text" id="escolaridade" name="escolaridade" class="form-control" placeholder="Digite sua escolaridade" required>
+                    </div>
+
+                   <button type="submit">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+    </svg>
+    Enviar Cadastro
+</button>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
